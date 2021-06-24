@@ -1,0 +1,351 @@
+/*html{
+    scroll-behavior: smooth;
+}*/
+h1, h2, h3, h4, .nav-item, #transition, footer {
+    text-align: center;
+}
+/* *********************** HEADER **************** */
+.navbar{
+    border-bottom: 1px solid black;
+}
+.collapse{
+    margin-left: 4%;
+}
+.nav-item{
+    color: darkslategray;
+    font-weight: bold;
+    padding-right: 45px;
+}
+.logo{
+    font-family: "birdsOfParadise", serif, sans-serif;
+    color: #ff3b3b;
+    text-shadow: 2px 1px 1px white;
+    font-size: 2rem;
+}
+
+header{
+    background: url("./images/porscheRougeAvecFond.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 40px;
+}
+h1{
+    font-size: 9rem;
+    padding: 25vh 0 0 0; 
+    text-shadow: 2px 1px 1px white;
+    animation: titre ease 5s;
+    font-family: "birdsOfParadise", serif, sans-serif;
+    color: #fd7e14;
+}
+@keyframes titre {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ******************** LEFT PART ************************ */
+#leftPart{
+    background-color: #fd7e14;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    
+}
+.elements{
+    padding: 70px 0;
+}
+.elements img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.elements p{
+    font-size: 1.1em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 10px;
+}
+.elements .button{
+    text-align: right;
+    margin-bottom: 15px 4% 0 0;
+}
+/* ********************************* RIGHT PART *************** */
+#rightPart{
+    background-color: #ff3b3b;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.tips{
+    height: 200px;
+    width: 200px;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+    
+}
+.tips h4{
+    position: relative;
+    color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    /*text-shadow: 1px 1px 0 #fd7e14, 1px -1px 0 #fd7e14, -1px 1px 0 #fd7e14, -1px -1px 0 #fd7e14, 1px 0px 0 #fd7e14, 0px 1px 0 #fd7e14, -1px 0px 0 #fd7e14, 0px -1px 0 #fd7e14;*/
+    margin: auto 2px;
+    font-weight: 1000;
+}
+.tips:hover{
+    transform: scale(1.08);
+    opacity: 0.7;
+    transition: ease-out 0.2s;
+}
+
+#transition{
+    padding: 50px 0;
+}
+#transition #blackCar{
+    animation: blackCar ease-in 5s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-iteration-count: infinite;
+    
+    opacity: 0;
+    
+}
+#transition #yellowCar{
+    animation: yellowCar ease-in 5s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-iteration-count: infinite;
+    
+    opacity: 0;
+  }
+  
+  @keyframes blackCar{
+    0% {
+        transform:  translate(-50vw,0px)  ;
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        transform:  translate(100vw,0px)  ;
+      opacity: 0;
+    }
+}
+    @keyframes yellowCar{
+        0% {
+          transform:  translate(50vw,0px)  ;
+          opacity: 0;
+        }
+        50% {
+          transform:  translate(50vw,0px)  ;
+          opacity: 0;
+        }
+        75%{
+            opacity: 1;
+        }
+        100%{
+            transform:  translate(-100vw,0px)  ;
+            opacity: 0;
+        }
+  }
+  
+  
+  
+/* ************************* CONTACT ***************** */
+#contact{
+    background: url(./images/Harley.jpeg)no-repeat 50% 50%;
+    background-size: cover;
+    height: 600px;
+    width: 900px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #fd7e14;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    text-shadow: 1px 1px 0 white, 1px -1px 0 white, -1px 1px 0 white, -1px -1px 0 white, 1px 0px 0 white, 0px 1px 0 white, -1px 0px 0 rgb(255, 255, 255), 0px -1px 0 white;
+}
+#contact h4{
+    font-size: 3rem;
+    margin-top: 15px;
+    padding: 100px 0 20px 0;
+}
+#contact .lien{
+    transform: scale(1);
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#contact .lien:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black, 1px 0px 0 black, 0px 1px 0 black, -1px 0px 0 rgb(0, 0, 0), 0px -1px 0 black;
+}
+#contact a{
+    color: #fd7e14;
+    
+}
+
+#contact a:hover{
+    color: #ffb273;
+    text-decoration: none;
+}
+#contact i{
+    margin-right: 5px;
+}
+#contact .fa-crosshairs{
+    font-size: 3rem;
+    position: relative;
+    top: 25px;
+}
+
+
+/*#contact .input-group{
+    width: 40%;
+    min-width: 350px;
+    margin: 0 auto;
+}*/
+footer{
+    background-color: #fd7e14;
+    padding: 15px 0 4px 0;
+}
+/* *********************** MEDIA QUERIES ********************* */
+@media screen and (max-width: 990px) {
+    .navbar img{
+        width: 150px;
+    }
+    .nav-item{
+        padding-right: 10px;
+    }
+    h1{
+        font-size: 7em;
+    }
+    #rightPart{
+        display: flex;
+    }
+    #rightPart h2{
+        display: none;
+    }
+    .tips{
+        height: 130px;
+        width: 130px;
+    }
+    #contact{
+        height: 500px;
+        width: 750px;
+    }
+    #contact{
+        font-size: 2rem;
+    }
+    #contact h4{
+        font-size: 2.5rem;
+        padding: 100px 0 20px 0;
+    }
+    #contact .lien{
+        margin-bottom: 25px;
+    }
+    
+}
+@media  screen and (max-width: 790px) {
+    .nav-link{
+        padding-left: 5px !important;
+    }
+    h1{
+        font-size: 5em;
+    }
+    .elements{
+        padding: 30px 0;
+
+    }
+    .elements img{
+        width: 150px;
+        height: 150px;
+        margin-top: 40px;
+
+    }
+    #transition img{
+        width: 250px;
+    }
+    .tips{
+        height: 90px;
+        width: 90px;
+    }
+    .tips h4{
+        font-size: 0.9em;
+    }
+    #contact{
+        height: 333px;
+        width: 501px;
+    }
+    #contact{
+        font-size: 1.5rem;
+    }
+    #contact h4{
+        font-size: 2rem;
+        padding: 40px 0 20px 0;
+    }
+    #contact .lien{
+        margin-bottom: 15px;
+    }
+    #contact .fa-crosshairs{
+        font-size: 2.2rem;
+        top: 20px;
+    }
+}
+@media screen and (max-width: 580px){
+    .navbar{
+        background-color: #ff3b3b !important;
+    }
+    .logo{
+        display: block;
+        max-height: 40px;
+        color: #fd7e14;
+    }
+    .logo:hover{
+        text-decoration: none;
+        
+    }
+    .nav-link{
+        padding: 0 !important;
+    }
+    .elements{
+        padding: 15px 0;
+        text-align: center;
+    }
+    .elements img{
+        margin-bottom: 10px;
+    }
+    .navbar img{
+        /*display: none !important;*/
+        margin: auto;
+        width: 200px;
+        position:absolute;
+    }
+    #transition{
+        display: none;
+    }
+}
+/* ********************* POLICES **************** */
+@font-face {
+    font-family: "birdsOfParadise";
+    src: url(./polices/birdsOfParadise.ttf);
+}
+  
+  
+  
+  
+  
+  
+  

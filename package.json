@@ -1,0 +1,15 @@
+{
+  "name": "carspatbootstrap",
+  "version": "1.0.0",
+  "description": "Site vitrine carrosserie CarsPat avec bootstrap ",
+  "main": "jquery.min.js",
+  "scripts": {
+    "prefix": "postcss style.css --use autoprefixer -d prefixed"
+  },
+  "author": "DevWeb13",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  }
+}
